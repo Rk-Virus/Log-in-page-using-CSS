@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url("space-bg.jpg"); 
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        .form{
+            margin: 100px auto;
+            font-size: larger;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            height: 25vw;
+            width: 35%;
+            min-height: 15em;
+            max-height: 18em;
+            min-width: 12em;
+            max-width: 20em;
+            background-color: rgba(101, 116, 121, 0.3);
+            color: rgb(186, 226, 233);
+            border: 2px solid grey;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px black, inset 0px 0px 8px white;
+            box-sizing: border-box;
+        }
+        .head{
+            color: rgba(240, 239, 235, 1);
+            text-shadow: 3px 3px 2px rgb(12, 11, 11), -2px -2px 2px black;
+        }
+        .form label{
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 1px black;
+        }
+        .form input{
+            display: block;
+            margin-bottom: 10px;
+        }
+        #join{
+            font-size: large;
+            border: none;
+            background-color: rgb(212, 209, 209);
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 2px black;
+        }
+        #join:hover{
+            font-size: 20px;
+            background-color: rgb(252, 249, 249);
+            box-shadow: 2px 2px 5px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2 class="head">Sign Up Now!</h2>
+        <form action="/server.php" method="POST" autocomplete="off">
+            <label for="UserName">Create User Name :</label>
+            <input type="text" name="username" id="name" required autofocus>
+            <label for="email">Your Email : </label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Create Password : </label>
+            <input type="password" name="pass" id="password">
+            <input type="submit" value="Join" id="join">
+        </form>
+    </div>
+</body>
+</html>
