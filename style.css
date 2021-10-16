@@ -36,6 +36,7 @@
 }
 .form label{
     font-size: larger;
+    font-weight: bolder;
     color: rgb(212, 0, 0);
     margin-bottom: 5px;
     text-shadow: 1px 2px 2px orange;
