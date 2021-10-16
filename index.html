@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRG - Log in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <h2 class="head">Log in to Join!</h2>
+
+        <form action="/" method="POST" autocomplete="on">
+            <!-- <label for="userName">Student Name :</label>
+            <input type="text" name="username" id="userName" required autofocus> -->
+            
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password">
+
+            <input type="submit" value="Join" id="submitbtn">
+        </form>
+    </div>
+</div>
+
+<script>
+    function onsubmit(event){
+        event.preventDefault()
+    }
+
+    document.getElementById('submitbtn').addEventListener('click', onsubmit);
+</script>
+</body>
+</html>
